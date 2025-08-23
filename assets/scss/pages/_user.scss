@@ -31,10 +31,20 @@
 }
 
 .Radius16-2 {
-  border-radius: 16px;
+  border-radius: 16px !important;
   padding: 12px 20px 12px 20px;
 }
 
-.modal-dialog-custom{
-    max-width: 480px;
+.modal-dialog-custom {
+  max-width: 480px;
 }
+
+// 
+#pills-tab .nav-link.active {
+    background-color: #E0E5EB !important;
+  }
+  
+  /* Hover 效果 */
+  #pills-tab .nav-link:hover:not(.active) {
+    background-color: #E0E5EB !important;
+  }
