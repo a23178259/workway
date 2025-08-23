@@ -805,8 +805,10 @@ $mark-bg: $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y: 0.5rem !default;
-$table-cell-padding-x: 0.5rem !default;
+// $table-cell-padding-y: 0.5rem !default;
+$table-cell-padding-y: 1rem !default;
+// $table-cell-padding-x: 0.5rem !default;
+$table-cell-padding-x: 0.75rem !default;
 $table-cell-padding-y-sm: 0.25rem !default;
 $table-cell-padding-x-sm: 0.25rem !default;
 
@@ -816,14 +818,16 @@ $table-color: var(--#{$prefix}emphasis-color) !default;
 $table-bg: var(--#{$prefix}body-bg) !default;
 $table-accent-bg: transparent !default;
 
-$table-th-font-weight: null !default;
+// $table-th-font-weight: null !default;
+$table-th-font-weight: $font-weight-medium !default;
 
 $table-striped-color: $table-color !default;
 $table-striped-bg-factor: 0.05 !default;
-$table-striped-bg: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  $table-striped-bg-factor
-) !default;
+// $table-striped-bg: rgba(
+//   var(--#{$prefix}emphasis-color-rgb),
+//   $table-striped-bg-factor
+// ) !default;
+$table-striped-bg: $natural-85 !default;
 
 $table-active-color: $table-color !default;
 $table-active-bg-factor: 0.1 !default;
@@ -843,7 +847,8 @@ $table-border-factor: 0.2 !default;
 $table-border-width: var(--#{$prefix}border-width) !default;
 $table-border-color: var(--#{$prefix}border-color) !default;
 
-$table-striped-order: odd !default;
+// $table-striped-order: odd !default;
+$table-striped-order: even !default;
 $table-striped-columns-order: even !default;
 
 $table-group-separator-color: currentcolor !default;
@@ -993,7 +998,8 @@ $input-border-color: var(--#{$prefix}border-color) !default;
 $input-border-width: $input-btn-border-width !default;
 $input-box-shadow: var(--#{$prefix}box-shadow-inset) !default;
 
-$input-border-radius: var(--#{$prefix}border-radius) !default;
+// $input-border-radius: var(--#{$prefix}border-radius) !default;
+$input-border-radius: 0.5rem !default;
 $input-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
@@ -1042,9 +1048,11 @@ $form-color-width: 3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width: 1em !default;
+// $form-check-input-width: 1em !default;
+$form-check-input-width: 1.25em !default;
 $form-check-min-height: $font-size-base * $line-height-base !default;
-$form-check-padding-start: $form-check-input-width + 0.5em !default;
+// $form-check-padding-start: $form-check-input-width + 0.5em !default;
+$form-check-padding-start: $form-check-input-width + 0.25em !default;
 $form-check-margin-bottom: 0.125rem !default;
 $form-check-label-color: null !default;
 $form-check-label-cursor: null !default;
@@ -1186,7 +1194,8 @@ $form-floating-padding-y: 1rem !default;
 $form-floating-input-padding-t: 1.625rem !default;
 $form-floating-input-padding-b: 0.625rem !default;
 $form-floating-label-height: 1.5em !default;
-$form-floating-label-opacity: 0.65 !default;
+// $form-floating-label-opacity: 0.65 !default;
+$form-floating-label-opacity: 1 !default;
 $form-floating-label-transform: scale(0.85) translateY(-0.5rem)
   translateX(0.15rem) !default;
 $form-floating-label-disabled-color: $gray-600 !default;
@@ -1630,11 +1639,16 @@ $toast-header-border-color: $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size: 0.75em !default;
-$badge-font-weight: $font-weight-bold !default;
-$badge-color: $white !default;
-$badge-padding-y: 0.35em !default;
-$badge-padding-x: 0.65em !default;
+// $badge-font-size: 0.75em !default;
+$badge-font-size: 0.875em !default;
+// $badge-font-weight: $font-weight-bold !default;
+$badge-font-weight: $font-weight-medium !default;
+// $badge-color: $white !default;
+$badge-color: $natural-50 !default;
+// $badge-padding-y: 0.35em !default;
+$badge-padding-y: 0.25em !default;
+// $badge-padding-x: 0.65em !default;
+$badge-padding-x: 0.571em !default;
 $badge-border-radius: var(--#{$prefix}border-radius) !default;
 // scss-docs-end badge-variables
 

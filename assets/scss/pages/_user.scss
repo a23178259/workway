@@ -2,10 +2,16 @@
   width: 300px;
 }
 
-//
 .Radius16-1 {
   border-radius: 16px;
   padding: 12px 12px 12px 20px;
+}
+
+.py-20-px-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .tab-btn-bg {
@@ -13,13 +19,159 @@
     background-color: $white;
   }
 }
-
-// nav-link 有 active 和 border-radius 樣式，為了保留 active 效果，所以添加了 !important 來覆蓋原本的樣式
-// .Radius16-2 {
-//   border-radius: 16px !important;
-//   padding: 12px 20px 12px 20px;
-// }
+.input-placeholder-color::placeholder {
+  color: #667f99 !important;
+}
 
 .modal-dialog-custom {
   max-width: 480px;
+}
+
+@media (max-width: 767px) {
+  .ptbl-12-pr-8 {
+    padding: 12px 8px 12px 12px;
+  }
+  .p-12px {
+    padding: 12px;
+  }
+  .py-12px {
+    padding: 12px 0;
+  }
+  .table-th-padding {
+    padding: 11.5px 0 !important;
+    padding-right: 206px !important;
+    padding-left: 8px !important;
+  }
+  .table-padding-content1 {
+    padding: 10px 0;
+    padding-right: 24px;
+    padding-left: 8px;
+  }
+  .table-padding-content2 {
+    padding-top: 11.5px !important;
+    padding-bottom: 11.5px !important;
+    padding: 0 8px !important;
+  }
+  .table-padding-content3 {
+    padding: 11.5px 0;
+    padding-left: 8px;
+    padding-right: 235px;
+  }
+  .table-padding-content4 {
+    padding-top: 11.5px;
+    padding-bottom: 11.5px !important;
+    padding-left: 8px !important;
+  }
+  .table-padding-content5 {
+    padding: 10px 8px !important;
+  }
+  .fz-16 {
+    font-size: 16px !important;
+  }
+  .fz-14 {
+    font-size: 14px;
+  }
+  .fz-20 {
+    font-size: 20px;
+  }
+  .fz-28 {
+    font-size: 28px !important;
+  }
+  .tab-btn-bg .nav-link {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .border-md-0 {
+    border: none !important;
+  }
+  .mb-md-16 {
+    margin-bottom: 16px !important;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px !important;
+  }
+  .table > :not(caption) > * > * {
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  div.modal-dialog-custom {
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+}
+
+/* 桌面版樣式 (≥768px) */
+@media (min-width: 990px) {
+  .avatar-upload-section {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .avatar-upload-section img {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* 手機版樣式 (≤767px) */
+@media (max-width: 767px) {
+  /* 頭像上傳區域 - 水平排列，靠左對齊 */
+  .avatar-upload-section {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* 頭像樣式 - 保持原始尺寸 */
+  .avatar-upload-section img {
+    margin-right: 0 !important;
+    margin-bottom: 0;
+    /* 保持桌面版尺寸，不縮小 */
+    flex-shrink: 0;
+  }
+
+  /* 更新頭貼按鈕樣式 */
+  .avatar-upload-section .btn {
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* 個人資料表單區域整體調整 */
+  .personal-info-form {
+    padding: 0 !important;
+  }
+
+  /* 左右佈局改為上下佈局 */
+  .personal-info-layout {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  .personal-info-layout .side-width {
+    width: 100% !important;
+    flex-shrink: 1 !important;
+  }
+
+  .personal-info-layout .flex-grow-1 {
+    width: 100%;
+  }
+
+  /* 性別選項調整 */
+  .gender-options {
+    display: flex;
+  }
+
+  .gender-options .form-check-inline {
+    display: block !important;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
 }
