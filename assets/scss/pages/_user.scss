@@ -30,6 +30,7 @@
   padding: 12px 12px 12px 20px;
 }
 
+// nav-link 有 active 和 border-radius 樣式，為了保留 active 效果，所以添加了 !important 來覆蓋原本的樣式
 .Radius16-2 {
   border-radius: 16px !important;
   padding: 12px 20px 12px 20px;
@@ -39,12 +40,12 @@
   max-width: 480px;
 }
 
-// 
+// 為 tab 分頁按鈕添加保持按下去狀態的樣式；以下樣式因為優先權不足，故添加 !important 來覆蓋原本的樣式
 #pills-tab .nav-link.active {
     background-color: #E0E5EB !important;
   }
   
-  /* Hover 效果 */
+  /* Hover */
   #pills-tab .nav-link:hover:not(.active) {
     background-color: #E0E5EB !important;
   }
