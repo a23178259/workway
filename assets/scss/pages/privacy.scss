@@ -7,6 +7,10 @@ ul li::marker {
   font-family: inherit;
 }
 
+.fz-20 {
+  font-size: 20px;
+}
+
 @media (max-width: 767px) {
   .fz-28px {
     font-size: 28px !important;
