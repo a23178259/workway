@@ -1,0 +1,20 @@
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+ul li::marker {
+  font-size: 0.6em;
+  font-family: inherit;
+}
+
+@media (max-width: 767px) {
+  .fz-28px {
+    font-size: 28px !important;
+  }
+  .fz-14 {
+    font-size: 14px;
+  }
+  .mb-8 {
+    margin-bottom: 8px !important;
+  }
+}
